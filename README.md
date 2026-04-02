@@ -24,4 +24,5 @@ hnu第四小组的文献计量学作业🤔
 - reports/：数据质量报告、查新报告
 - paper/：课程综述、论文稿件
 - docs/：字段说明、规范文档
- ##检索表达式
+##检索表达式：
+ TS=("RISC-V" OR "RISC V" OR "RISC_V" OR "RV32" OR "RV64") AND TS=("CPU" OR "central processing unit" OR "processor" OR "microprocessor" OR "core") AND TS=("design" OR "architecture" OR "implementation" OR "microarchitecture") NOT TS=("GPU" OR "graphics processing unit" OR "DSP" OR "digital signal processor" OR "FPGA" OR "ASIC" OR "accelerator")

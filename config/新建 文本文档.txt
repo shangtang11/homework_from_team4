@@ -1,0 +1,1 @@
+TS=("RISC-V" OR "RISC V" OR "RISC_V" OR "RV32" OR "RV64") AND TS=("CPU" OR "central processing unit" OR "processor" OR "microprocessor" OR "core") AND TS=("design" OR "architecture" OR "implementation" OR "microarchitecture") NOT TS=("GPU" OR "graphics processing unit" OR "DSP" OR "digital signal processor" OR "FPGA" OR "ASIC" OR "accelerator")

@@ -1,0 +1,4 @@
+ALL=("RISC-V" OR "RISC V" OR "RISC_V" OR RV32 OR RV32I OR RV32M OR RV32A OR RV32F OR RV32D OR RV64 OR RV64I OR RV64M OR RV64A OR RV64F OR RV64D OR "RISC-V core" OR "open source RISC-V" OR "embedded RISC-V")
+AND
+ALL=(CPU OR processor OR microprocessor OR core OR "processor core" OR "CPU core" OR design OR architecture OR implementation OR microarchitecture OR pipeline OR "branch prediction" OR cache OR ISA OR "instruction set architecture" OR datapath OR "control unit")
+NOT TS=(GPU OR "graphics processing unit" OR DSP OR "digital signal processor")

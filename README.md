@@ -58,3 +58,9 @@ TS=(GPU OR "graphics processing unit" OR DSP OR "digital signal processor")
 ✅ 摘要✅ 地址（作者单位地址）✅ 隶属关系（作者所属机构全称）✅ 文档类型✅ 关键词（作者关键词）✅ WoS 分类✅ 研究领域✅ 语言
 （三）引用参考文献与使用模块
 ✅ 引用参考文献（Cited References，共被引 / 耦合分析核心必填字段）✅ 热报（Citation Burst，突现检测字段）✅ 高被引（Highly Cited，高影响力文献标识）
+
+## 数据质量检查说明
+1. 数据完整性检查
+
+
+

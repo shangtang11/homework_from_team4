@@ -1,0 +1,33 @@
+Total Records Found: 0
+---------------------------------------------------------
+Total Unique Records (Article): 0
+Duplicates: 0
+Discarded: 0
+
+-------------------------------------------------------
+Years: 0
+
+
+Total unique records exported: 0
+WOS Records retained: 0
+Scopus Records retained: 0
+CSSCI Records retained: 0
+Dimensions Records retained: 0
+Overlapped Records: 0
+
+####### STATISTICS #########
+Total: 0
+   AB: 0	NaN%
+  DOI: 0	NaN%
+ PMID: 0	NaN%
+   DE: 0	NaN%
+   ID: 0	NaN%
+   WC: 0	NaN%
+   SC: 0	NaN%
+   CR: 0	NaN%
+   RR: 0	NaN%
+   XX: 0	NaN%
+   YY: 0	NaN%
+   ZZ: 0	NaN%
+
+############################

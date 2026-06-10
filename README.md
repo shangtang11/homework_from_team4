@@ -19,11 +19,11 @@ hnu第四小组的文献计量学作业🤔
 ## 仓库结构
 - data/：原始数据 + 清洗后数据
 - config/：检索式、配置文件
-- src/：代码（数据处理、可视化、网络分析）
+- src/：代码（数据处理）
 - outputs/：图表、结果、指标文件
-- reports/：数据质量报告、查新报告0
+- reports/：答辩ppt
 - paper/：课程综述、论文稿件
-- docs/：字段说明、规范文档
+- docs/：AI使用说明
 ## 检索表达式：
  ALL=("RISC-V" OR "RISC V" OR "RISC_V" OR RV32 OR RV32I OR RV32M OR RV32A OR RV32F OR RV32D OR RV64 OR RV64I OR RV64M OR RV64A OR RV64F OR RV64D OR "RISC-V core" OR "open source RISC-V" OR "embedded RISC-V")
 AND

@@ -2,11 +2,11 @@
 hnu第四小组的文献计量学作业🤔
 # HNU 第四小组 - RISC-V 文献计量学项目
 
-## 团队成员
-- 寻锦洲：检索式构建、数据采集
-- 金本卓：数据清洗、质量检查
-- 胡锦棠：知识图谱构建、可视化
-- 卢宏骏：综述撰写、报告整理
+## 团队成员分工说明
+- 寻锦洲：检索式构建、数据采集、PPT答辩讲述
+- 金本卓：数据清洗、质量检查、AI使用声明
+- 胡锦棠：知识图谱构建、可视化、三图一表说明撰写
+- 卢宏骏：综述撰写、报告整理、三图一表说明撰写、结课论文撰写、答辩ppt撰写
 
 ## 研究方向
 基于文献计量的RISC-V架构处理器设计研究前沿探索
@@ -31,9 +31,9 @@ ALL=(CPU OR processor OR microprocessor OR core OR "processor core" OR "CPU core
 NOT TS=(GPU OR "graphics processing unit" OR DSP OR "digital signal processor")
 
 ## 数据检索说明
-1. 数据来源
+### 1. 数据来源
 本数据集来源于 Web of Science 核心合集（Web of Science Core Collection），为课程文献计量分析指定标准数据源，该数据库引文数据完整度、规范性最高，可支撑共被引分析、文献耦合分析、影响力指标计算等全流程分析需求。
-2. 检索式版本（最终锁定版，与 config/query.yaml 完全一致）
+### 2. 检索式版本（最终锁定版，与 config/query.yaml 完全一致）
 plaintext
 ALL=("RISC-V" OR "RISC V" OR "RISC_V" OR RV32 OR RV32I OR RV32M OR RV32A OR RV32F OR RV32D OR RV64 OR RV64I OR RV64M OR RV64A OR RV64F OR RV64D OR "RISC-V core" OR "open source RISC-V" OR "embedded RISC-V")
 AND
@@ -42,16 +42,16 @@ NOT
 TS=(GPU OR "graphics processing unit" OR DSP OR "digital signal processor")
   检索字段说明：ALL= 全字段检索，TS= 主题字段（标题 + 摘要 + 关键词）
   逻辑规则：严格遵循布尔检索优先级，同义词组括号包裹，无逻辑歧义
-3. 导出时间戳
+### 3. 导出时间戳
 分批次导出时间：2026 年 04 月 08 日
 检索执行时间：2026 年 04 月 08 日
 检索式版本锁定时间：2026 年 04 月 08 日
-4. 总批次与总条数
+### 4. 总批次与总条数
 总导出批次：11 个批次
 原始文献总条数：10851条
 去重后有效文献条数：7682 条
 去重规则：以 DOI 为唯一标识符，保留首次出现的文献条目，符合课程数据去重标准规范
-5. 导出字段清单
+### 5. 导出字段清单
 （一）作者、标题、来源模块
 ✅ 作者✅ 标题✅ 资料来源（期刊 / 会议名称）✅ Conf.Info/Sponsors（会议信息 / 赞助方）✅ 被引用次数✅ 作者标识✅ 国际标准连续出版物号（ISSN）
 （二）摘要、关键词、地址模块

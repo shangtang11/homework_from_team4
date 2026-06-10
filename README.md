@@ -2,11 +2,11 @@
 hnu第四小组的文献计量学作业🤔
 # HNU 第四小组 - RISC-V 文献计量学项目
 
-## 团队成员
-- 寻锦洲：检索式构建、数据采集
-- 金本卓：数据清洗、质量检查
-- 胡锦棠：知识图谱构建、可视化
-- 卢宏骏：综述撰写、报告整理
+## 团队成员分工说明
+- 寻锦洲：检索式构建、数据采集、PPT答辩讲述
+- 金本卓：数据清洗、质量检查、AI使用声明
+- 胡锦棠：知识图谱构建、可视化、三图一表说明撰写
+- 卢宏骏：综述撰写、报告整理、三图一表说明撰写、结课论文撰写、答辩ppt撰写
 
 ## 研究方向
 基于文献计量的RISC-V架构处理器设计研究前沿探索
@@ -19,11 +19,11 @@ hnu第四小组的文献计量学作业🤔
 ## 仓库结构
 - data/：原始数据 + 清洗后数据
 - config/：检索式、配置文件
-- src/：代码（数据处理、可视化、网络分析）
+- src/：代码（数据处理）
 - outputs/：图表、结果、指标文件
-- reports/：数据质量报告、查新报告0
+- reports/：答辩ppt
 - paper/：课程综述、论文稿件
-- docs/：字段说明、规范文档
+- docs/：AI使用说明
 ## 检索表达式：
  ALL=("RISC-V" OR "RISC V" OR "RISC_V" OR RV32 OR RV32I OR RV32M OR RV32A OR RV32F OR RV32D OR RV64 OR RV64I OR RV64M OR RV64A OR RV64F OR RV64D OR "RISC-V core" OR "open source RISC-V" OR "embedded RISC-V")
 AND
@@ -31,9 +31,9 @@ ALL=(CPU OR processor OR microprocessor OR core OR "processor core" OR "CPU core
 NOT TS=(GPU OR "graphics processing unit" OR DSP OR "digital signal processor")
 
 ## 数据检索说明
-1. 数据来源
+### 1. 数据来源
 本数据集来源于 Web of Science 核心合集（Web of Science Core Collection），为课程文献计量分析指定标准数据源，该数据库引文数据完整度、规范性最高，可支撑共被引分析、文献耦合分析、影响力指标计算等全流程分析需求。
-2. 检索式版本（最终锁定版，与 config/query.yaml 完全一致）
+### 2. 检索式版本（最终锁定版，与 config/query.yaml 完全一致）
 plaintext
 ALL=("RISC-V" OR "RISC V" OR "RISC_V" OR RV32 OR RV32I OR RV32M OR RV32A OR RV32F OR RV32D OR RV64 OR RV64I OR RV64M OR RV64A OR RV64F OR RV64D OR "RISC-V core" OR "open source RISC-V" OR "embedded RISC-V")
 AND
@@ -42,16 +42,16 @@ NOT
 TS=(GPU OR "graphics processing unit" OR DSP OR "digital signal processor")
   检索字段说明：ALL= 全字段检索，TS= 主题字段（标题 + 摘要 + 关键词）
   逻辑规则：严格遵循布尔检索优先级，同义词组括号包裹，无逻辑歧义
-3. 导出时间戳
+### 3. 导出时间戳
 分批次导出时间：2026 年 04 月 08 日
 检索执行时间：2026 年 04 月 08 日
 检索式版本锁定时间：2026 年 04 月 08 日
-4. 总批次与总条数
+### 4. 总批次与总条数
 总导出批次：11 个批次
 原始文献总条数：10851条
 去重后有效文献条数：7682 条
 去重规则：以 DOI 为唯一标识符，保留首次出现的文献条目，符合课程数据去重标准规范
-5. 导出字段清单
+### 5. 导出字段清单
 （一）作者、标题、来源模块
 ✅ 作者✅ 标题✅ 资料来源（期刊 / 会议名称）✅ Conf.Info/Sponsors（会议信息 / 赞助方）✅ 被引用次数✅ 作者标识✅ 国际标准连续出版物号（ISSN）
 （二）摘要、关键词、地址模块
@@ -67,6 +67,7 @@ TS=(GPU OR "graphics processing unit" OR DSP OR "digital signal processor")
 ## 核心产出
 ### 一、 VOSviewer共被引网络图解释
 RQ1：该领域的知识基础由哪些核心文献和研究方向构成？
+<img width="771" height="532" alt="image" src="https://github.com/user-attachments/assets/a7802900-1a81-4bb9-ae8e-50146c504fb2" />
 
 研究问题
 本图为VOSviewer生成的RISC-V处理器领域文献共被引网络，旨在回答RISC-V处理器架构领域的知识基础是什么这一核心问题。通过文献间的共被引关联，识别该领域的核心奠基文献、关键知识集群以及不同研究方向的内在联系，明确支撑整个领域发展的学术根基。
@@ -84,6 +85,7 @@ RQ1：该领域的知识基础由哪些核心文献和研究方向构成？
 
 ### 二、CiteSpace共被引时间线图解释
 　　RQ2：该领域的研究主题如何随时间演化，经历了哪些关键发展阶段？
+<img width="771" height="489" alt="image" src="https://github.com/user-attachments/assets/010bdff8-0adf-44d7-b41f-3492bc09a4e9" />
 
 研究问题 
 本图为CiteSpace生成的RISC-V处理器领域共被引时间线图，旨在回答RISC-V处理器架构领域的研究趋势如何演化这一问题。通过将共被引网络按时间维度展开，清晰呈现不同研究主题的出现时间、发展周期与演变脉络，识别领域发展的关键转折点与未来走向。
@@ -99,6 +101,7 @@ RQ1：该领域的知识基础由哪些核心文献和研究方向构成？
 
 ### 三、 VOSviewer作者合作网络图解释
 RQ3：谁是该领域的核心学者，全球合作格局呈现何种特征？
+<img width="771" height="532" alt="image" src="https://github.com/user-attachments/assets/4ec75e65-d59f-49ac-91ad-be22522a8d41" />
 
 研究问题
 本图为VOSviewer生成的RISC-V处理器领域作者合作网络，旨在回答谁在推动RISC-V处理器架构领域的发展这一问题。通过分析作者间的合作关系，识别该领域的核心学者、主要研究团队以及全球合作格局，明确不同团队的研究特色与影响力。
@@ -116,8 +119,20 @@ RQ3：谁是该领域的核心学者，全球合作格局呈现何种特征？
 
 ### 四、Top10里程碑候选论文列表
 RQ4： 该领域的知识基础由哪些核心文献和研究方向构成？
-排名作者年份被引频次中心性突现强度Sigma 值半衰期 (年)来源出版物核心贡献DOI1Costan V20161040.0732.039.183.5USENIX Security系统阐述 Intel SGX 技术，为 RISC-V TEE 设计提供基准-2Jouppi NP2017500.1217.127.424.5ISCA 2017提出张量处理单元（TPU）架构，推动 RISC-V AI 加速10.1145/3079856.30802463Costan Victor2016560.1016.894.733.5Cryptology ePrint详细解析 TEE 安全机制，成为 RISC-V 安全扩展的核心参考10.1159/0000888094Sebastian A2020370.1015.624.283.5Nature Nanotech提出相变存储器存算一体架构，为 RISC-V 异构计算提供方向10.1038/s41565-020-0655-z5Paszke A2019670.0526.263.454.5NeurIPS发布 PyTorch 框架，推动 RISC-V 与深度学习的结合-6Xu YZ2015290.0913.423.263.5IEEE S&P 2015发现硬件漏洞 "Rowhammer"，推动 RISC-V 安全设计10.1109/SP.2015.457Krizhevsky A2017330.0913.073.033.5Commun ACM提出 AlexNet 架构，奠定深度学习硬件加速的基础10.1145/30653868Amid A2020660.0618.172.753.5IEEE Micro设计高性能 RISC-V 处理器 "Rocket Chip"，推动产业化应用10.1109/MM.2020.29966169Hu H2016190.069.351.792.5IEEE S&P 2016提出侧信道攻击方法，揭示 RISC-V 处理器的安全漏洞10.1109/SP.2016.6210Hills G20193640.0419.062.052.5Nature实现全球首个碳纳米管 RISC-V 处理器，突破硅基半导体极限10.1038/s41586-019-1493-8核心发现：安全领域的文献在知识网络中占据核心桥梁地位，是连接不同研究方向的关键节点
-。
+| 排名 | 作者            | 年份   | 被引频次 | 中心性  | 突现强度  | Sigma 值 | 半衰期 (年) | 来源出版物             | DOI                       |
+|----|---------------|------|------|------|-------|---------|---------|-------------------|---------------------------|
+| 1  | Costan V      | 2016 | 104  | 0.07 | 32.03 | 9.18    | 3.5     | USENIX Security   | -                         |
+| 2  | Jouppi NP     | 2017 | 50   | 0.12 | 17.12 | 7.42    | 4.5     | ISCA 2017         | 10.1145/3079856.3080246   |
+| 3  | Costan Victor | 2016 | 56   | 0.10 | 16.89 | 4.73    | 3.5     | Cryptology ePrint | 10.1159/000088809         |
+| 4  | Sebastian A   | 2020 | 37   | 0.10 | 15.62 | 4.28    | 3.5     | Nature Nanotech   | 10.1038/s41565-020-0655-z |
+| 5  | Paszke A      | 2019 | 67   | 0.05 | 26.26 | 3.45    | 4.5     | NeurIPS           | -                         |
+| 6  | Xu YZ         | 2015 | 29   | 0.09 | 13.42 | 3.26    | 3.5     | IEEE S&P 2015     | 10.1109/SP.2015.45        |
+| 7  | Krizhevsky A  | 2017 | 33   | 0.09 | 13.07 | 3.03    | 3.5     | Commun ACM        | 10.1145/3065386           |
+| 8  | Amid A        | 2020 | 66   | 0.06 | 18.17 | 2.75    | 3.5     | IEEE Micro        | 10.1109/MM.2020.2996616   |
+| 9  | Hu H          | 2016 | 19   | 0.06 | 9.35  | 1.79    | 2.5     | IEEE S&P 2016     | 10.1109/SP.2016.62        |
+| 10 | Hills G       | 2019 | 364  | 0.04 | 19.06 | 2.05    | 2.5     | Nature            | 10.1038/s41586-019-1493-8 |
+
+
 • 计量证据：Top10 文献中有 6 篇属于安全领域，平均中心性 = 0.08，高于其他领域的平均中心性（0.05）。
 • 文献证据：Van Bulck J 2018 年的 "Foreshadow" 攻击论文（中心性 = 0.13）连接了微架构优化与安全两个聚类，是知识网络中最重要的桥梁文献。
 • 边界提醒：被引频次和 Sigma 值仅反映文献的学术影响力，不能直接等同于学术质量；部分高被引文献可能因争议性而非创新性获得高引用。
